@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Themieko advertisement firm</title>
+		<link rel="stylesheet" href="./style.css">
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+		integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+	</head>
+	<body>
+		<!--header start-->
+	<header>
+		<div class="inner-header">
+			<div class="logo">
+				<a href="./index.html"><img src="./images/logo.jpg" width="150" alt=""></a>
+			</div>
+			<nav role="navigation">
+				<!--mobile hamburger to open the nav  -->
+				<input name="toggler" id="toggler" type="checkbox">
+				<label for="toggler" class="toggle1"></label>
+				<label for="toggler" class="toggle2"></label>
+				<label for="toggler" class="toggle3"></label>
+				<ul>
+					<li><a href="./index.html" class="active">Home</a></li>
+					<li id="service-toggle"><a href="#">Services</a>
+				 <div class="sub-menu">
+						<ul class="dropdown" id="dropdown">
+							<li><a href="./content-creation.html">Content creation</a></li>
+							<li><a href="./social-media-marketing.html">Social media marketing</a></li>
+							<li><a href="./photography.html">Product photography</a></li>
+							<li><a href="./graphics-design.html">Graphics design</a></li>
+							<li><a href="./web-development.html">Web design/development</a></li>
+						</ul> 
+				 </div>
+						</li>
+					<li><a href="./contact.html">Contact</a></li>
+					<li><a href="./about.html">About</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+<!--main begins-->
+<main>
+<div class="gd-container">
+	<div class="hero-img">
+		<img src="./images/grIMG5.jpg" alt="graphic design hero image">
+	</div>
+    <div class="pg-content">
+		<!--intro section-->
+			<div id="pg-title" class="pg-title">
+				
+					<div class="container flex-center slide-up">
+						<h1 class="page-title">Themieko</h1>
+						<p class="page-subtitle">Intelligent designs made visible </p>
+					</div>
+				</div>
+				<!--/intro section ends-->
+	<!--description of content-->
+	<div class="page-txt">
+		<div class="pg-des">
+			<p class ="para1 slide-up" id="para1">Graphics designing and branding is the use of visual information with the knowledge of shapes, images, typeface, color gradient and most
+				 importantly alignment of words to pass distinct, simple and explanatory information that the eye can see.
+			</p>
+			<div class="row">
+				<p class="slide-in" id="quote-para">
+					Have you ever heard the popular saying <q>There is trust in what you see.</q>
+						Graphics designs and branding helps to put your business image and information in a visible
+						 manner, where by customers can see and trust what you do.	
+				</p>
+				<p class="my slide-right">
+					The major reason why you eye is important is the more reason why you need attractive, informative and
+					 captivating content to keep your customers in check or to pass vital information to them about existing 
+					 or newly launched produce.
+				</p>
+		
+			</div>
+		</div>
+	</div>
+
+<div class="project-designs">
+	<div class="sec-title">
+		<h2>PREVIOUS PROJECT ON GRAPHICS DESIGN</h2>
+	</div>
+	<div class="mobile-img">
+		<div class="slide slide-up">
+		<img name="smSlide" height="100%" width="100%" alt="">
+		</div>
+	</div>
+	<script>
+		var i = 0; 			// Start Point
+var grImg = [];	// Images Array
+var time = 6000;	// Time Between Switch
+	 grImg[0] = "./images/grIMG2.jpg"
+	 grImg[1] = "./images/grIMG1.jpg"
+	 grImg[2] = "./images/grIMG3.jpg"
+	 grImg[3] = "./images/grIMG4.jpg"
+		// Change Image
+function graphicsImg(){
+	document.smSlide.src = grImg[i];
+	
+
+	// Check If Index Is Under Max
+	if(i < grImg.length - 1 ){
+	  // Add 1 to Index
+	  i++; 
+	} else { 
+		// Reset Back To O
+		i = 0;
+	}
+
+	// Run function every x seconds
+	setTimeout("graphicsImg()", time);
+}
+graphicsImg();
+// Run function when page loads
+
+	</script>
+	<div class="project-img">
+		<div class="row">
+			<div class="col slide-in">
+		<img src="./images/grIMG1.jpg" alt="project designs for chips making branding">
+		<img src="./images/grIMG2.jpg" alt="">
+			</div>
+			<div class="col slide-right">
+				<img src="./images/grIMG3.jpg" alt="desins on pepsi">
+				<img src="./images/grIMG4.jpg" alt="design on heinkein">
+			</div>
+		</div>
+	</div>
+</div>
+<section>
+	<div class="pr-sec-cont">
+ <div class="pr-nd-cont">
+	 <h2>WHY YOU NEED GRAPHIC DESIGN AND BRANDING</h2>
+	 <div class="pr-list">
+	  <ol id="pr-ol slide-up">
+		  <li>TO TEACH YOUR VALUE TO YOUR CUSTOMERS: <br>
+
+			You need graphics to give information’s that communicates the value of your brand and why you’re needed.
+			</li>
+			<li>TO DISSEMINATE INFORMATION:<br>
+				Majority of us won’t read too much long text information maybe because it is boring or because we are 
+				not concerned but with a good graphics everyone attention is drawn to what you have to say. It is very 
+				easy to scan through the images and the little text fast which converts more than text
+				</li>
+				<li>MARKETING PURPOSE: <br>
+					The funny part is that all other marketing skills needs graphics to be more effective. 
+					You can hope to run a social media without hoping to get a better graphics because that 
+					is what attracts the most. You can hope to use content marketing without using graphics,
+					 you can’t want a website without using graphic
+					</li>
+	  </ol>
+	 </div>
+ </div>
+ <div>
+</section>
+<section>
+	<div class="content-cont">
+		<div class="header-title">
+			<h2>WHY YOU NEED US TO HELP YOU OUT WITH QUALITY DESIGN</h2>
+		</div>
+		<div class="content slide-up">
+			<p>We are a team of concentrated gurus, aiming at simplicity and perfection of work to the betterment of your brand
+				. We make designs that promote the image of the company, putting in mind the core values of your business, it 
+				purpose of creation and the features that keeps it running.</p>
+		</div>
+		<div class="header-title slide-up">
+			<h2>HOW WE DO IT</h2>
+		</div>
+		<div class="content">
+			<p>We are latest, we are evolving with time, we don’t stay stagnant, we move with the innovations of time.
+				Every available graphical software is what we make use of. The likes of CorelDraw, adobe Photoshop, image illustrator etc.
+				We make use of them to the peak of their usefulness.
+				.</p>
+		</div>
+		<div class="header-title slide-in">
+			<h2>WHY WE DO IT</h2>
+		</div>
+		<div class="content slide-up">
+			<p>Our knowledge of the importance of the eyes to visual communication has really made us worry more on the values companies and brand place on their visual communication and we have stood to be a help to every brand with a graphical identity problem.
+				The visual communication of your brand is what distinguishes you from competitors
+				</p>
+		</div>
+		<div class="action-btn slide-up">
+			<button type="button"><a href="./contact.html">Contact us</a></button>
+		</div>
+	</div>
+</section>
+	</div>
+</div>
+</main>
+
+
+footer>
+	<div class="footer-container" style="background-color: rgb(0, 0, 0);" >
+		<div class="footer-top" style="background-color: rgb(15, 15, 15);">
+			<div class="ct-text slide-up">
+			<h3>Speak With Us</h3>
+			<p>Make enquiries on how to start your project or just <br>speak with us to learn more about our 
+				our company. <br> We are eager to make your brand win. Our vision <br> and aim is to build a better brand for forward orientated companies.
+			</p>
+			</div>
+			<div class="service-provided slide-up">
+				<h3>We Drive result through</h3>
+				<ul>
+					<li>SEO Services</li>
+					<li>Social media</li>
+					<li>Web analytics</li>
+					<li>Email Marketing</li>
+					<li>Lead generation</li>
+					<li>Pay-per-click</li>
+				</ul>
+			</div>
+		
+		<div class="footer-md">
+			<div class="contact-info slide-up">
+				<h3>Contact</h3>
+				<div class="contacts">
+					<i class="fa fa-blender-phone"></i>
+					<span id="phone-number">
+						<a href="tel:+2348138786698">08138786698</a>
+						<h5>Mon-Fri 9am-4pm</h5>
+					</span>
+				</div>
+				<div class="contacts">
+					<i class="fa fa-paper-plane"></i>
+					<span id="email">
+						<a href="mailto:contact@themiekoadverts.com">info@themiekoadverts.com</a>
+						<h5>Fast enquiry</h5>
+					</span>
+				   
+				</div>
+				<div class="contacts">
+					<i class="fas fa-map-marked-alt"></i>
+					<span id="address">
+						<h4>Ikorodu, Lagos</h4>
+						<h5>always at your service</h5>
+					</span>
+
+				</div>
+			</div>
+		</div>
+		</div>
+		<hr>
+		<div class="footer-bottom" style="background-color: black;">
+			<p> &copy; 2020 <a href="#">Themieko_Ads</a>, all right reserved</p>
+		</div>
+		</div>	
+</footer>
+<script src="./js/main.js"></script>
+</body>
+</html>
