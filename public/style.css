@@ -1437,6 +1437,247 @@ text-align: left;
 	color: rgb(182, 233, 248);
  }
 
+ /*content marketting*/
+
+.cm-container .hero-img{
+display: flex;
+padding-top: 30px;
+justify-content:center;
+align-items: center;
+}
+
+.cm-container .hero-img img{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	height: 600px;
+}
+
+.cm-cont .row {
+ display: flex;
+ justify-content: space-around;
+ background-color: #e9e7e7;
+}
+.cm-cont .col {
+	padding-left: 20px;
+}
+
+.cm-cont .col h3 {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 50px;
+	line-height: 50px;
+	color: #3d3a3a;
+	padding-bottom: 20px;
+}
+
+.cm-cont .col p {
+	font-size: 20px;
+	font-family: "montserrat", sans-serif;
+	font-style: italic;
+	font-weight: 800;
+	color: #494848;
+	line-height: 30px;
+}
+
+
+.col-b {
+	color: orangered;
+	text-transform: capitalize;
+}
+.cm-pg-cont{
+	margin: 100px;
+	padding: 10px;
+	color: #3d3a3a;
+	font-family: 'montserrat',sans-serif;
+}
+
+.cm-pg-cont h3 {
+	text-transform: capitalize;
+}
+.cm-pg-cont p {
+	padding-top: 25px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 25px;
+
+}
+.cm-pg-cont img {
+	width: 90%;
+	height: 500px;
+	margin-top: 40px;
+}
+.cm-pg-cont .row {
+	display: flex;
+	justify-content: space-around;
+
+}
+.cm-pg-cont .row img {
+	width: 50%;
+	height: 40%;
+}
+.qa{
+	margin-top: 30PX;
+	padding: 30px;
+	background-color: rgb(237, 251, 253);
+	
+}
+.qa-list li{
+	list-style: inside;
+	padding: 20px;
+	font-style: oblique;
+	font-weight: 700;
+}
+.qa h4 {
+	font-family: 'roboto', sans-serif;
+	font-size: 30px;
+	border-bottom: 2px solid orangered;
+	border-width: 30px;
+	
+}
+.ls-cont{
+	position: relative;
+
+}
+.ls-cont img {
+	filter: blur(0.3px);
+	position: relative;
+}
+.ls-text {
+	
+	position: absolute;
+	top: 0;
+	right: 0;	
+	text-align: right;
+	line-height: 30px;
+	padding: 60px;
+	padding-right: 40px;
+	color: whitesmoke;
+	background:linear-gradient(rgb(14, 30, 65), rgb(0, 16, 31), rgb(13, 13, 59));
+	transform: skew(20deg, 5deg);
+}
+.ls-text h4 {
+	font-size: 50px;
+	font-style: oblique;
+	font-family: cursive;
+	padding-bottom: 25px;
+	color: teal;
+}
+.ls-text p{
+	font-size: 25px;
+	word-spacing: 3px;
+	letter-spacing: 2px;
+
+}
+.ls-btn {
+	border: none;
+	padding: 20px;
+	margin: 50px;
+	background:linear-gradient(rgb(14, 30, 65), rgb(0, 16, 31), rgb(13, 13, 59));
+	
+}
+.ls-btn a{
+	color: whitesmoke;
+	font-size: 30px;
+}
+
+
+
+
+@media (max-width:900px){
+	.cm-container .hero-img img{
+		width: 100%;
+		height: 100%;
+	}
+.cm-cont .row{
+	flex-direction: column;
+	padding-left: 0%;
+}
+.cm-cont .row .col img{
+	width: 100%;
+	height: 100%;
+	
+}
+.cm-cont .col h3 {
+	font-size: 30px;
+	padding: 8px;
+}
+
+.cm-cont .col p {
+	font-size: 15px;
+	margin-bottom: 14px;
+	padding: 8px;
+	font-weight: 400;
+	
+}
+.cm-cont .col{
+	padding-left: 0%;
+}
+.cm-pg-cont {
+	margin: 25px;
+}
+
+.cm-pg-cont img{
+	width: 100%;
+	height: 130%;
+}
+.cm-pg-cont .row{
+	display: block;
+}
+.cm-pg-cont .row img {
+	width: 100%;
+	height: 100%;
+	margin-top: 0%;
+}
+.qa {
+	font-size: 15px;
+	padding: 5px;
+	
+}
+.qa-list {
+	padding: 0px;
+}
+.ls-cont img {
+	width: 100%;
+	height: 100%;
+}
+
+.ls-text {
+	
+	position: absolute;
+	top: 0;
+	right: 0;	
+	margin: 0;
+	padding: 10px;
+	text-align: left;
+	line-height: 10px;
+	color: whitesmoke;
+	background:linear-gradient(rgb(14, 30, 65), rgb(0, 16, 31), rgb(13, 13, 59));
+	transform: skew(4deg, 2deg);
+}
+.ls-text h4 {
+	font-size: 20px;
+
+}
+.ls-text p{
+	font-size: 17px;
+	word-spacing: 1.5px;
+	letter-spacing: 1.3px;
+	line-height: 15px;
+
+}
+.ls-text p br {
+	display: none;
+}
+.ls-btn {
+	width: 100%;
+	border: none;
+	margin: 0px;
+	text-align: center;
+}
+}
+
+ /*onscroll animation*/
+
  .slide-up {
 	 opacity: 0;
 	 transform: translateY(100%);
@@ -1447,14 +1688,14 @@ text-align: left;
 	 transform: translateY(0%);
  }
  .slide-in {
-	 transform: translateX(-200px);
+	 transform: translateX(-100%);
 	 opacity: 0;
 	 transition: all 4s ease-in-out;
  }
  
 
  .slide-right {
-	 transform: translateX(200px);
+	 transform: translateX(100%);
 	 opacity: 0;
 	 transition: all 4s ease-in-out;
  }

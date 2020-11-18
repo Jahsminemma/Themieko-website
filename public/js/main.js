@@ -22,7 +22,7 @@ const slideFromRight = document.querySelectorAll(".slide-right")
 
 options= {
 	threshold : 0,
-	rootMargin: "0px 0px 140px 0px"
+	rootMargin: "80px 0px 0px 0px"
 };
 
 const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll){
