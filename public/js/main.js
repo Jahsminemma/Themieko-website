@@ -1,6 +1,7 @@
+const scrollTopBtn =document.querySelector(".scroll-top .btn")
+const serviceToggler=document.getElementById("service-toggle")
+const dropdown = document.getElementById("dropdown");
 
-serviceToggler=document.getElementById("service-toggle")
-dropdown = document.getElementById("dropdown")
 
 serviceToggler.addEventListener("click", function show(){
 this.classList.toggle("show")
@@ -9,6 +10,21 @@ if(serviceToggler.classList.contains("show")){
 }	
 else{dropdown.style.display="none"}
 })
+window.onscroll = function showScrollTopBtn(){
+	if(document.body.scrollTop > 40 || document.documentElement.scrollTop > 40){
+		scrollTopBtn.style.display = "block"
+	} else{
+		scrollTopBtn.style.display="none"
+	}
+}
+
+let scrollToTop=()=>{
+	if(document.body.scrollTop > 0 || document.documentElement.scrollTop > 0){ 
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+	}
+};
+
 
 
 

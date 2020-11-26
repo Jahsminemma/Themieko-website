@@ -48,6 +48,11 @@
 	<div class="hero-img">
 		<img src="./images/grIMG5.jpg" alt="graphic design hero image">
 	</div>
+	<div class="scroll-top">
+		<button onclick="scrollToTop()" class="btn">
+		 <i class="fas fa-arrow-circle-up"></i>
+		</button>
+	</div>
     <div class="pg-content">
 		<!--intro section-->
 			<div id="pg-title" class="pg-title">
@@ -89,35 +94,7 @@
 		<img name="smSlide" height="100%" width="100%" alt="">
 		</div>
 	</div>
-	<script>
-		var i = 0; 			// Start Point
-var grImg = [];	// Images Array
-var time = 6000;	// Time Between Switch
-	 grImg[0] = "./images/grIMG2.jpg"
-	 grImg[1] = "./images/grIMG1.jpg"
-	 grImg[2] = "./images/grIMG3.jpg"
-	 grImg[3] = "./images/grIMG4.jpg"
-		// Change Image
-function graphicsImg(){
-	document.smSlide.src = grImg[i];
 	
-
-	// Check If Index Is Under Max
-	if(i < grImg.length - 1 ){
-	  // Add 1 to Index
-	  i++; 
-	} else { 
-		// Reset Back To O
-		i = 0;
-	}
-
-	// Run function every x seconds
-	setTimeout("graphicsImg()", time);
-}
-graphicsImg();
-// Run function when page loads
-
-	</script>
 	<div class="project-img">
 		<div class="row">
 			<div class="col slide-in">
@@ -251,5 +228,34 @@ footer>
 		</div>	
 </footer>
 <script src="./js/main.js"></script>
+<script>
+	var i = 0; 			// Start Point
+var grImg = [];	// Images Array
+var time = 6000;	// Time Between Switch
+ grImg[0] = "./images/grIMG2.jpg"
+ grImg[1] = "./images/grIMG1.jpg"
+ grImg[2] = "./images/grIMG3.jpg"
+ grImg[3] = "./images/grIMG4.jpg"
+	// Change Image
+function graphicsImg(){
+document.smSlide.src = grImg[i];
+
+
+// Check If Index Is Under Max
+if(i < grImg.length - 1 ){
+  // Add 1 to Index
+  i++; 
+} else { 
+	// Reset Back To O
+	i = 0;
+}
+
+// Run function every x seconds
+setTimeout("graphicsImg()", time);
+}
+graphicsImg();
+// Run function when page loads
+
+</script>
 </body>
 </html>
