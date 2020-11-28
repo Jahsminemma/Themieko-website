@@ -1769,13 +1769,20 @@ align-items: center;
 	color: whitesmoke;
 	display: none;
 }
-.scroll-top .btn:hover{
-	background-color: #011016;
+@media (min-width:900px){
+	.scroll-top .btn:hover{
+		background-color: #000000;
+	}
+	
 }
+
 @media (max-width:900px){
 	.scroll-top .btn{
 		margin: 10px;
+		width: 35px;
+		height: 35px;
 	}
+	
 }
 
  /*onscroll animation*/
@@ -1790,14 +1797,14 @@ align-items: center;
 	 transform: translateY(0%);
  }
  .slide-in {
-	 transform: translateX(-100%);
+	 transform: translateX(-30%);
 	 opacity: 0;
 	 transition: all 4s ease-in-out;
  }
  
 
  .slide-right {
-	 transform: translateX(100%);
+	 transform: translateX(30%);
 	 opacity: 0;
 	 transition: all 4s ease-in-out;
  }
